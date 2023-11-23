@@ -8,7 +8,7 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
-      transform: true,
+      transform: true, // controller 에서 라우팅 파라미터 타입을 자동변경 해줌.
     }),
   );
   await app.listen(3000);
